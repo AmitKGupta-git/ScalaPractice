@@ -1,3 +1,4 @@
+import scala.annotation.tailrec
 // Simple Implementation of factorial
 
 def factorial(number: Int): Int =
@@ -11,7 +12,8 @@ factorial(5)
 
 //Tail recursion version for optimization purpose
 
-def factorialTailRecursion(number: Int): Int = {
+def factorialTailRecursion(number: Int): Int = {\
+  @tailrec
   def factorialInner(number: Int, multiple: Int): Int = {
     if(number == 1)
       multiple
