@@ -6,7 +6,7 @@ object exercise {
 
   product(x => x)(1, 5)
 
-  // Define factoria as product
+  // Define factorial as product
   def fact(n: Int) = product(x => x)(1, n)
   fact(5)
 
@@ -19,4 +19,10 @@ object exercise {
     mapReduce(f, (x, y)=> x * y, 1)(a, b)
 
   newProduct(x => x)(1,5)
+
+  // ================================================
+
+  
+
+
 }
